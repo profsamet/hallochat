@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Giriş Yap - ChatZone</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.body.addEventListener('contextmenu', e => e.preventDefault());
+      document.body.addEventListener('selectstart', e => e.preventDefault());
+      document.body.addEventListener('copy', e => e.preventDefault());
+    });
+  </script>
+</head>
+<body>
+  <!-- Intro ekranı -->
+  <div id="intro" class="intro-screen">
+    <h2>💬 ChatZone<span class="dots"><span>.</span><span>.</span><span>.</span></span></h2>
+  </div>
+
+  <!-- Giriş formu (başlatta gizli) -->
+  <div class="container" id="loginContainer">
+    <h2>💬 ChatZone</h2>
+    <form id="loginForm">
+      <div class="input-group">
+        <label for="username">Kullanıcı Adı</label>
+        <input type="text" id="username" placeholder="Kullanıcı adınızı girin" required>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Şifre</label>
+        <input type="password" id="password" placeholder="Şifrenizi girin" required>
+      </div>
+
+      <button type="submit">Giriş Yap</button>
+    </form>
+
+    <a href="register.html">Hesabın yok mu? Kayıt ol</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Kayıt Ol - ChatZone</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.body.addEventListener('contextmenu', e => e.preventDefault());
+      document.body.addEventListener('selectstart', e => e.preventDefault());
+      document.body.addEventListener('copy', e => e.preventDefault());
+    });
+  </script>
+</head>
+<body>
+  <div id="intro" class="intro-screen">
+    <h2>💬 ChatZone<span class="dots"><span>.</span><span>.</span><span>.</span></span></h2>
+  </div>
+
+  <div class="container" id="registerContainer">
+    <h2>💬 ChatZone</h2>
+    <form id="registerForm">
+      <div class="input-group">
+        <label for="username">Kullanıcı Adı</label>
+        <input type="text" id="username" placeholder="Kullanıcı adınızı seçin" required>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Şifre</label>
+        <input type="password" id="password" placeholder="Şifre oluşturun" required>
+      </div>
+
+      <div class="input-group">
+        <label for="confirm">Şifre Tekrar</label>
+        <input type="password" id="confirm" placeholder="Şifreyi tekrar girin" required>
+      </div>
+
+      <button type="submit">Kayıt Ol</button>
+    </form>
+
+    <a href="index.html">Zaten hesabın var mı? Giriş yap</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
